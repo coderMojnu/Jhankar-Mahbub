@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1em;
+            grid-template-columns: 250px 1fr 1fr;
+        }
+        .article {
+            background-color: powderblue;
+        }
+        .article-1 {
+            background-color: purple;
+            grid-row: 1/span 4;
+        }
+        .article-10 {
+            grid-column: 2/span 2;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="article article-1">
+            <h3>article-1</h3>
+        </div>
+        <div class="article article-2">
+            <h3>article-2</h3>
+        </div>
+        <div class="article article-3">
+            <h3>article-3</h3>
+        </div>
+        <div class="article article-4">
+            <h3>article-4</h3>
+        </div>
+        <div class="article article-5">
+            <h3>article-5</h3>
+        </div>
+        <div class="article article-6">
+            <h3>article-6</h3>
+        </div>
+        <div class="article article-7">
+            <h3>article-7</h3>
+        </div>
+        <div class="article article-8">
+            <h3>article-8</h3>
+        </div>
+        <div class="article article-9">
+            <h3>article-9</h3>
+        </div>
+        <div class="article article-10">
+            <h3>article-10</h3>
+        </div>
+    </section>
+</body>
+</html>
