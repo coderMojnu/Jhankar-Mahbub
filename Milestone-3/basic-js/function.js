@@ -10,5 +10,10 @@ function add(num1, num2) {
     var sum = num1 + num2;
     return sum;
 }
-var result = add(2,3);
+var result = add(2, 3);
 console.log(result);
+
+function sayHello(name, age) {
+    console.log(name + " is " + age + " years old.");
+}
+sayHello("Mojnu", 18);
