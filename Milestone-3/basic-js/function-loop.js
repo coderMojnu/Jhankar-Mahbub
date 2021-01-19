@@ -1,6 +1,13 @@
-function add(num1, num2) {
-    var result = num1 + num2;
-    return result;
+var numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+function findLargeNumber(numbers){
+   var larger = numbers[0];
+   for(var i=0; i < numbers.length; i++){
+   var element = numbers[i];
+   if(element > larger) {
+    larger = numbers[i];
+   }
 }
-var sum = add(2, 3);
-console.log(sum);
+   return larger;
+}
+var output = findLargeNumber(numbers);
+console.log("Output", output);
