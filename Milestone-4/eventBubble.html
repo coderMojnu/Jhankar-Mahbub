@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <ul id="myList">
+            <li class="list-item" id="first-list">List-1</li>
+            <li class="list-item">List-2</li>
+            <li class="list-item">List-3</li>
+            <li class="list-item">List-4</li>
+        </ul>
+    </div>
+    <script>
+        var items = document.getElementsByClassName('list-item');
+        for (let i = 0; i < items.length; i++) {
+            const element = items[i];
+            element.addEventListener('click', function(event){
+                console.log(this, event.target.parentNode.removeChild(event.target));
+            });
+        }
+        // document.getElementById('first-list').addEventListener('click', 
+        // function(event){
+        //     document.body.style.backgroundColor = 'tomato'
+        //     event.stopPropagation();
+        // });
+        // document.getElementById('container').addEventListener('click', function(event){alert('How are you, Mojnu?')});
+    </script>
+</body>
+</html>

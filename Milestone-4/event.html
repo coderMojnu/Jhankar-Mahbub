@@ -7,11 +7,12 @@
 </head>
 <body>
     <h1 onclick="alert('Hello, Mr.')">Exploring Events</h1>
-    <button onmouseover = "handleClicked()">Click me to show Magic</button>
+    <button>click me-1</button>
+    <button id='second'>click me-2</button>
+    <button>click me-3</button>
+    <button id='last'>click me-4</button>
     <script>
-        function handleClicked() {
-            console.log(new Date());
-        }
+        document.getElementById('last').addEventListener('click', function(){document.body.style.backgroundColor = 'orange'});
     </script>
 </body>
 </html>
